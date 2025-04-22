@@ -1,4 +1,4 @@
-LLaMA Text Summarizer
+LLaMA Text Summarizer: 
 A lightweight AI-powered application that leverages the LLaMA language model (via Ollama) to generate concise summaries from longer text passages.
 
 This project includes:
