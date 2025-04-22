@@ -1,0 +1,25 @@
+brew install pyenv
+brew install openssl readline sqlite3 xz zlib tcl-tk libffi
+subl ~/.zshrc
+
+.zshrc config code
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export CONFIGURE_OPTS="--with-openssl=$(brew --prefix openssl)"
+export PATH="$PYENV_ROOT/shims:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+
+source ~/.zshrc 
+pyenv install 3.8
+python -m pip install numpy
+
+mkdir project1
+pyenv virtualenv 3.10 proj1_3.10_env
+
+pyenv local proj1_3.10_env
+
+
+YouTube Link: https://www.youtube.com/watch?v=u62MifBPI5g
