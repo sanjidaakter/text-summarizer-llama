@@ -13,13 +13,12 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 
 source ~/.zshrc 
-pyenv install 3.8
+pyenv install 3.10
 python -m pip install numpy
 
-mkdir project1
+mkdir text-summarizer-llama
 pyenv virtualenv 3.10 proj1_3.10_env
 
 pyenv local proj1_3.10_env
 
 
-YouTube Link: https://www.youtube.com/watch?v=u62MifBPI5g
