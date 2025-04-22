@@ -7,13 +7,13 @@ This project includes:
  - A locally running LLaMA model via Ollama
 
 Setup Instructions:
-  - Clone the repository
-       git clone <your-repo-url>
+  - Clone the repository: 
+       git clone <your-repo-url>, 
        cd llama-text-summarizer
-  - Install dependencies
+  - Install dependencies: 
        pip install -r requirements.txt
-  - Start the backend (FastAPI)
+  - Start the backend (FastAPI): 
        uvicorn backend.main:app --reload
-  - Launch the frontend (Streamlit)
+  - Launch the frontend (Streamlit): 
        streamlit run frontend/app.py
 
